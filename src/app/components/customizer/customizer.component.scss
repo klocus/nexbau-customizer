@@ -4,7 +4,26 @@
 }
 
 section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   width: 77%;
+  overflow: hidden;
+
+  figure {
+    position: absolute;
+    margin: 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0 auto;
+      vertical-align: middle;
+    }
+  }
 }
 
 aside {

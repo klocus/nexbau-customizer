@@ -1,6 +1,6 @@
-import { Door } from './door';
+import { Item } from './Item';
 
-export const DOORS: Door[] = [
+export const ITEMS: Item[] = [
   {
     id: 1,
     name: 'one',
@@ -23,35 +23,20 @@ export const DOORS: Door[] = [
       },
       {
         name: 'shell',
-        label: 'Shell',
+        label: 'Shell color',
         type: 'radio',
         options: [
           {
-            label: 'Plastic',
-            value: 'plastic',
+            label: 'Cream',
+            value: 'cream',
           },
           {
-            label: 'Covered',
-            value: 'covered',
-          },
-        ]
-      },
-      {
-        name: 'color',
-        label: 'Color',
-        type: 'radio',
-        options: [
-          {
-            label: 'Orange',
-            value: 'orange',
+            label: 'Ice',
+            value: 'ice',
           },
           {
-            label: 'Blue',
-            value: 'blue',
-          },
-          {
-            label: 'Green',
-            value: 'green',
+            label: 'Red',
+            value: 'red',
           },
         ]
       },

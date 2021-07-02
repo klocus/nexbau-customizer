@@ -1,7 +1,9 @@
 <section>
-  P R O D U C T
+  <figure *ngFor="let src of images">
+    <img [src]="'/assets/img/items/' + src" alt="">
+  </figure>
 </section>
 
 <aside>
-  <app-sidebar></app-sidebar>
+  <app-sidebar [items]="items" [selected]="selected"></app-sidebar>
 </aside>

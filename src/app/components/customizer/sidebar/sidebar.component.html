@@ -1,15 +1,19 @@
 <ul>
-    <li *ngFor="let door of doors">
+    <li *ngFor="let door of items">
         <a [routerLink]="['/doors', door.id]" [routerLinkActive]="'active'"><strong>{{door.id}}</strong> {{door.label}}</a>
     </li>
 </ul>
 
-<ul *ngIf="door">
-  <li *ngFor="let field of door.fields">
+<ul>
+  <li *ngFor="let field of items[selected]['fields']">
     <strong>{{field.label}}</strong>
 
     <ul>
-      <li *ngFor="let option of field.options">{{option.label}}</li>
+      <li *ngFor="let option of field.options">
+        <span (click)="onOptionClick(field.name, option.value)">
+          {{option.label}}
+        </span>
+      </li>
     </ul>
   </li>
 </ul>
