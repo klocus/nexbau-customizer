@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { ProductComponent } from './components/product/product.component';
+import { SidebarComponent } from './components/customizer/sidebar/sidebar.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { CustomizerComponent } from './components/customizer/customizer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    ProductComponent
+    NotFoundComponent,
+    CustomizerComponent
   ],
   imports: [
     BrowserModule,

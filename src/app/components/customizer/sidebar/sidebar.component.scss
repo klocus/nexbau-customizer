@@ -1,0 +1,12 @@
+ul {
+  li {
+    a {
+      color: var(--color-muted);
+      text-decoration: none;
+
+      &.active {
+        color: var(--color-primary)
+      }
+    }
+  }
+}

@@ -3,49 +3,109 @@ import { Door } from './door';
 export const DOORS: Door[] = [
   {
     id: 1,
-    name: 'One',
+    name: 'one',
+    label: 'One',
     fields: [
       {
-        name: 'color',
+        name: 'base',
+        label: 'Base',
         type: 'radio',
-        value: ['orange', 'blue', 'green']
+        options: [
+          {
+            label: 'Wood',
+            value: 'wood',
+          },
+          {
+            label: 'Wire',
+            value: 'wire',
+          },
+        ]
       },
       {
-        name: 'size',
+        name: 'shell',
+        label: 'Shell',
         type: 'radio',
-        value: ['small', 'medium', 'large']
+        options: [
+          {
+            label: 'Plastic',
+            value: 'plastic',
+          },
+          {
+            label: 'Covered',
+            value: 'covered',
+          },
+        ]
+      },
+      {
+        name: 'color',
+        label: 'Color',
+        type: 'radio',
+        options: [
+          {
+            label: 'Orange',
+            value: 'orange',
+          },
+          {
+            label: 'Blue',
+            value: 'blue',
+          },
+          {
+            label: 'Green',
+            value: 'green',
+          },
+        ]
       },
     ],
   },
   {
     id: 2,
-    name: 'Two',
+    name: 'two',
+    label: 'Two',
     fields: [
       {
         name: 'color',
+        label: 'Color',
         type: 'radio',
-        value: ['orange', 'blue', 'green']
-      },
-      {
-        name: 'size',
-        type: 'radio',
-        value: ['small', 'medium', 'large']
+        options: [
+          {
+            label: 'Orange',
+            value: 'orange',
+          },
+          {
+            label: 'Blue',
+            value: 'blue',
+          },
+          {
+            label: 'Green',
+            value: 'green',
+          },
+        ]
       },
     ],
   },
   {
     id: 3,
-    name: 'Three',
+    name: 'three',
+    label: 'Three',
     fields: [
       {
         name: 'color',
+        label: 'Color',
         type: 'radio',
-        value: ['orange', 'blue', 'green']
-      },
-      {
-        name: 'size',
-        type: 'radio',
-        value: ['small', 'medium', 'large']
+        options: [
+          {
+            label: 'Orange',
+            value: 'orange',
+          },
+          {
+            label: 'Blue',
+            value: 'blue',
+          },
+          {
+            label: 'Green',
+            value: 'green',
+          },
+        ]
       },
     ],
   },
