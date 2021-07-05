@@ -24,8 +24,8 @@ ul.type {
 
     a {
       display: block;
-      height: 50px;
-      line-height: 50px;
+      height: 3rem;
+      line-height: 3rem;
       text-align: center;
       color: var(--color-grey);
       text-decoration: none;
@@ -42,15 +42,48 @@ ul.type {
   }
 }
 
-ul.fields {
+ul.field {
 
-  > li {
-    padding: 1rem;
-    border-bottom: 1px solid var(--color-black);
+  li {
 
-    > strong {
-      display: block;
-      margin-bottom: .5rem;
+    figure {
+      margin: 0;
+      cursor: pointer;
+
+      &:hover {
+        label {
+          color: var(--color-primary);
+        }
+      }
+
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.list {
+
+    li {
+
+      figure {
+        padding: 0 1rem;
+        height: 3rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  &.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    li {
+
+      figure {
+        height: 3rem;
+      }
     }
   }
 }

@@ -12,4 +12,5 @@ export class AccordionGroupComponent {
   @Input() title!: string;
 
   @Output() toggle: EventEmitter<any> = new EventEmitter<any>();
+
 }

@@ -9,7 +9,7 @@ export const ITEMS: Item[] = [
       {
         name: 'base',
         label: 'Base',
-        type: 'radio',
+        type: 'list',
         options: [
           {
             label: 'Wood',
@@ -24,7 +24,7 @@ export const ITEMS: Item[] = [
       {
         name: 'shell',
         label: 'Shell color',
-        type: 'radio',
+        type: 'grid',
         options: [
           {
             label: 'Cream',
@@ -50,7 +50,7 @@ export const ITEMS: Item[] = [
       {
         name: 'color',
         label: 'Color',
-        type: 'radio',
+        type: 'grid',
         options: [
           {
             label: 'Orange',
@@ -76,7 +76,7 @@ export const ITEMS: Item[] = [
       {
         name: 'color',
         label: 'Color',
-        type: 'radio',
+        type: 'grid',
         options: [
           {
             label: 'Orange',

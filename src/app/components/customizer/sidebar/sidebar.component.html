@@ -12,11 +12,11 @@
 
 <app-accordion>
   <app-accordion-group *ngFor="let field of items[selected]['fields']" [title]="field.label">
-    <ul>
+    <ul class="field" [ngClass]="field.type">
       <li *ngFor="let option of field.options">
-        <span (click)="onOptionClick(field.name, option.value)">
-          {{option.label}}
-        </span>
+        <figure (click)="onOptionClick(field.name, option.value)">
+          <label>{{option.label}}</label>
+        </figure>
       </li>
     </ul>
   </app-accordion-group>
