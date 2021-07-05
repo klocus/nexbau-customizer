@@ -1,13 +1,17 @@
-<ul>
+<header class="logo">
+  <a href="https://nexbau.com">
+    <img src="/assets/img/logo.svg" alt="Logo Nexbau">
+  </a>
+</header>
+
+<ul class="type">
     <li *ngFor="let door of items">
-        <a [routerLink]="['/doors', door.id]" [routerLinkActive]="'active'"><strong>{{door.id}}</strong> {{door.label}}</a>
+        <a [routerLink]="['/doors', door.id]" [routerLinkActive]="'active'">{{door.label}}</a>
     </li>
 </ul>
 
-<ul>
-  <li *ngFor="let field of items[selected]['fields']">
-    <strong>{{field.label}}</strong>
-
+<app-accordion>
+  <app-accordion-group *ngFor="let field of items[selected]['fields']" [title]="field.label">
     <ul>
       <li *ngFor="let option of field.options">
         <span (click)="onOptionClick(field.name, option.value)">
@@ -15,5 +19,5 @@
         </span>
       </li>
     </ul>
-  </li>
-</ul>
+  </app-accordion-group>
+</app-accordion>

@@ -21,6 +21,10 @@ export class CustomizerComponent implements OnInit {
 
   ngOnInit(): void {
     this.getItems();
+
+    this.route.queryParams.subscribe(params => {
+      this.prepareItemImages(params);
+    });
   }
 
   private getItems(): void {
@@ -44,11 +48,16 @@ export class CustomizerComponent implements OnInit {
     });
   }
 
-  private prepareItemImages(): void {
+  private prepareItemImages(options: any = {}): void {
     this.images = [];
 
+    let image: string = '';
     for (let field of this.items[this.selected]['fields']) {
-      this.images.push(`${this.items[this.selected]['name']}/${field['name']}-${field['options'][0]['value']}.png`);
+      image = this.items[this.selected]['name'] + '/' + field['name'] + '-';
+      image += field['name'] in options ? options[field['name']] : field['options'][0]['value'];
+      image += '.png';
+
+      this.images.push(image);
     }
   }
 
