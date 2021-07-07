@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class CustomizerComponent implements OnInit {
 
   public items: Item[] = [];
-  public selected!: number;
+  public selectedItem!: number;
   public images: string[] = [];
   public scale: number = 1.0;
 
@@ -40,9 +40,9 @@ export class CustomizerComponent implements OnInit {
     this.route.params.subscribe(params => {
       let index: number = this.items.findIndex(x => x.id == params.id);
       if (index > -1) {
-        this.selected = index;
+        this.selectedItem = index;
         this.prepareItemImages();
-        console.log('Item #' + params.id, this.items[this.selected]);
+        console.log('Item #' + params.id, this.items[this.selectedItem]);
       } else {
         this.router.navigate(['/not-found']);
       }
@@ -53,8 +53,8 @@ export class CustomizerComponent implements OnInit {
     this.images = [];
 
     let image: string = '';
-    for (let field of this.items[this.selected]['fields']) {
-      image = this.items[this.selected]['name'] + '/' + field['name'] + '-';
+    for (let field of this.items[this.selectedItem]['fields']) {
+      image = this.items[this.selectedItem]['name'] + '/' + field['name'] + '-';
       image += field['name'] in options ? options[field['name']] : field['options'][0]['value'];
       image += '.png';
 

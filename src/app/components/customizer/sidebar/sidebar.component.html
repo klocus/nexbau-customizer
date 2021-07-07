@@ -11,9 +11,9 @@
 </ul>
 
 <app-accordion>
-  <app-accordion-group *ngFor="let field of items[selected]['fields']" [title]="field.label">
+  <app-accordion-group *ngFor="let field of items[selectedItem]['fields']" [title]="field.label">
     <ul class="field" [ngClass]="field.type">
-      <li *ngFor="let option of field.options">
+      <li *ngFor="let option of field.options" [ngClass]="{'active': isActiveOption(field.name, option.value)}">
         <figure (click)="onOptionClick(field.name, option.value)">
           <label>{{option.label}}</label>
         </figure>

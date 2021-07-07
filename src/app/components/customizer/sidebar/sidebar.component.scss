@@ -43,9 +43,7 @@ ul.type {
 }
 
 ul.field {
-
   li {
-
     figure {
       margin: 0;
       cursor: pointer;
@@ -60,12 +58,18 @@ ul.field {
         cursor: pointer;
       }
     }
+
+    &.active {
+      figure {
+        label {
+          font-weight: bold;
+        }
+      }
+    }
   }
 
   &.list {
-
     li {
-
       figure {
         padding: 0 1rem;
         height: 3rem;
@@ -78,11 +82,12 @@ ul.field {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
+    padding: 0 1rem;
 
     li {
-
       figure {
         height: 3rem;
+        line-height: 3rem;
       }
     }
   }
