@@ -13,6 +13,7 @@ export class CustomizerComponent implements OnInit {
   public items: Item[] = [];
   public selected!: number;
   public images: string[] = [];
+  public scale: number = 1.0;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -58,6 +59,18 @@ export class CustomizerComponent implements OnInit {
       image += '.png';
 
       this.images.push(image);
+    }
+  }
+
+  public zoom(type: string): void {
+    if (type === '+') {
+      if (this.scale < 1.4) {
+        this.scale += 0.1;
+      }
+    } else {
+      if (this.scale > 1.0) {
+        this.scale -= 0.1;
+      }
     }
   }
 

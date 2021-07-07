@@ -1,6 +1,11 @@
 <section>
+  <div class="tools">
+    <button class="zoom-in" [disabled]="scale > 1.4" (click)="zoom('+')">+</button>
+    <button class="zoom-out" [disabled]="scale < 1.1" (click)="zoom('-')">-</button>
+  </div>
+
   <figure *ngFor="let src of images">
-    <img [src]="'/assets/img/items/' + src" alt="">
+    <img [src]="'/assets/img/items/' + src" [style]="'transform: scale(' + scale + ');'" alt="">
   </figure>
 </section>
 
