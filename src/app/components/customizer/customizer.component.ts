@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemService } from '../../services/item.service';
-import { Item } from '../../data/Item';
-import { ActivatedRoute, Router } from "@angular/router";
+import { Item } from '../../data/Item.interface';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-customizer',
@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class CustomizerComponent implements OnInit {
 
   public items: Item[] = [];
-  public selectedItem!: number;
+  public selectedItem!: Item;
   public images: string[] = [];
   public scale: number = 1.0;
 
@@ -24,7 +24,8 @@ export class CustomizerComponent implements OnInit {
     this.getItems();
 
     this.route.queryParams.subscribe(params => {
-      this.prepareItemImages(params);
+      this.updateSelectedItemOptions(params);
+      this.prepareSelectedItemImages();
     });
   }
 
@@ -32,31 +33,40 @@ export class CustomizerComponent implements OnInit {
     this.itemService.getDoors()
       .subscribe((items) => {
         this.items = items;
-        this.getSpecificItemIndex();
+        this.getSelectedItem();
       });
   }
 
-  private getSpecificItemIndex(): void {
+  private getSelectedItem(): void {
     this.route.params.subscribe(params => {
       let index: number = this.items.findIndex(x => x.id == params.id);
       if (index > -1) {
-        this.selectedItem = index;
-        this.prepareItemImages();
-        console.log('Item #' + params.id, this.items[this.selectedItem]);
+        this.selectedItem = this.items[index];
+        this.prepareSelectedItemImages();
       } else {
         this.router.navigate(['/not-found']);
       }
     });
   }
 
-  private prepareItemImages(options: any = {}): void {
+  private updateSelectedItemOptions(options: Params): void {
+    for (let field of this.selectedItem.fields) {
+      if (field.name in options) {
+        let index: number = field.options.findIndex(x => x.value == options[field.name]);
+        if (index > -1) {
+          field.selected = index;
+        }
+      }
+    }
+  }
+
+  private prepareSelectedItemImages(): void {
     this.images = [];
 
     let image: string = '';
-    for (let field of this.items[this.selectedItem]['fields']) {
-      image = this.items[this.selectedItem]['name'] + '/' + field['name'] + '-';
-      image += field['name'] in options ? options[field['name']] : field['options'][0]['value'];
-      image += '.png';
+    for (let field of this.selectedItem.fields) {
+      image = this.selectedItem.name + '/' + field.name + '-';
+      image += field['options'][field['selected']]['value'] + '.png';
 
       this.images.push(image);
     }

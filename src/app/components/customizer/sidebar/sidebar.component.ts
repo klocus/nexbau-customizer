@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { Item } from '../../../data/Item';
+import { Item } from '../../../data/Item.interface';
 import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
@@ -11,9 +11,9 @@ import { ActivatedRoute, Router } from "@angular/router";
 export class SidebarComponent implements OnInit {
 
   @Input() items!: Item[];
-  @Input('selected-item') selectedItem!: number;
+  @Input('selected-item') selectedItem!: Item;
 
-  private params:any = [];
+  private params: any = [];
 
   constructor(private route: ActivatedRoute,
               private router: Router) {
@@ -27,20 +27,6 @@ export class SidebarComponent implements OnInit {
 
   public onOptionClick(name: string, value: string) {
     this.router.navigate([], {queryParams: {[name]: value}, queryParamsHandling: 'merge'});
-  }
-
-  public isActiveOption(name: string, value: string): boolean {
-    if (this.params[name] !== undefined) {
-      return this.params[name] === value;
-    } else {
-      const field: number = this.items[this.selectedItem]['fields'].findIndex((x: any) => x.name === name);
-
-      if (field > -1 && this.items[this.selectedItem]['fields'][field]['options'][0]['value'] === value) {
-        return true;
-      }
-    }
-
-    return false;
   }
 
 }

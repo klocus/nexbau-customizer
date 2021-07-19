@@ -1,4 +1,5 @@
-import { Item } from './Item';
+import { Item } from './Item.interface';
+import { FieldType } from './FieldType.enum';
 
 export const ITEMS: Item[] = [
   {
@@ -9,7 +10,8 @@ export const ITEMS: Item[] = [
       {
         name: 'base',
         label: 'Base',
-        type: 'list',
+        type: FieldType.LIST,
+        selected: 0,
         options: [
           {
             label: 'Wood',
@@ -24,7 +26,8 @@ export const ITEMS: Item[] = [
       {
         name: 'shell',
         label: 'Shell color',
-        type: 'grid',
+        type: FieldType.GRID,
+        selected: 0,
         options: [
           {
             label: 'Cream',
@@ -50,7 +53,8 @@ export const ITEMS: Item[] = [
       {
         name: 'color',
         label: 'Color',
-        type: 'grid',
+        type: FieldType.GRID,
+        selected: 0,
         options: [
           {
             label: 'Orange',
@@ -76,7 +80,8 @@ export const ITEMS: Item[] = [
       {
         name: 'color',
         label: 'Color',
-        type: 'grid',
+        type: FieldType.GRID,
+        selected: 0,
         options: [
           {
             label: 'Orange',
