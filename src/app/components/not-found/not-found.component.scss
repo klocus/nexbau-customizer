@@ -1,0 +1,21 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  a {
+    display: block;
+    margin-bottom: 1rem;
+
+    img {
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
