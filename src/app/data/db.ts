@@ -27,6 +27,10 @@ export const ITEMS: Item[] = [
         name: 'shell',
         label: 'Shell color',
         type: FieldType.GRID,
+        condition: {
+          field: 'base',
+          value: 'wire'
+        },
         selected: 0,
         options: [
           {

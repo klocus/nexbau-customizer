@@ -11,13 +11,15 @@
 </ul>
 
 <app-accordion>
-  <app-accordion-group *ngFor="let field of selectedItem.fields" [title]="field.label">
-    <ul class="field" [ngClass]="field.type">
-      <li *ngFor="let option of field.options; index as i" [ngClass]="{ 'active': field.selected === i }">
-        <figure (click)="onOptionClick(field.name, option.value)">
-          <label>{{ option.label }}</label>
-        </figure>
-      </li>
-    </ul>
-  </app-accordion-group>
+  <ng-container *ngFor="let field of selectedItem.fields">
+    <app-accordion-group *ngIf="canDisplay(field)" [title]="field.label" [extra]="field.options[field.selected].label">
+      <ul class="field" [ngClass]="field.type">
+        <li *ngFor="let option of field.options; index as i" [ngClass]="{ 'active': field.selected === i }">
+          <figure (click)="onOptionClick(field.name, option.value)">
+            <label>{{ option.label }}</label>
+          </figure>
+        </li>
+      </ul>
+    </app-accordion-group>
+  </ng-container>
 </app-accordion>

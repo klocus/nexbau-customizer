@@ -11,6 +11,12 @@ export class AccordionGroupComponent {
 
   @Input() title!: string;
 
+  @Input() extra: string;
+
   @Output() toggle: EventEmitter<any> = new EventEmitter<any>();
+
+  constructor() {
+    this.extra = '';
+  }
 
 }

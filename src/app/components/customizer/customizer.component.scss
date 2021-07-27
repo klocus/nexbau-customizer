@@ -17,7 +17,7 @@ section {
     top: 1rem;
 
     * + * {
-      margin-left: .5rem;
+      margin-left: 0.5rem;
     }
 
     button {
@@ -33,7 +33,7 @@ section {
       cursor: pointer;
 
       &[disabled] {
-        opacity: .6;
+        opacity: 0.6;
         cursor: auto;
       }
 
@@ -75,7 +75,7 @@ section {
       padding: 0;
       margin: 0 auto;
       vertical-align: middle;
-      transition: all .3s;
+      transition: all 0.3s;
     }
   }
 }

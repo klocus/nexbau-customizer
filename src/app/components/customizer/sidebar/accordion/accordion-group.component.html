@@ -1,6 +1,10 @@
 <div class="group">
   <div class="title" (click)="toggle.emit()">
-    {{title}}
+    <span>{{ title }}</span>
+    <div *ngIf="extra" class="extra">
+      <span i18n>Wybrano</span>
+      <strong>{{ extra }}</strong>
+    </div>
   </div>
   <div class="body" [ngClass]="{'hidden': !opened}">
     <ng-content></ng-content>

@@ -1,12 +1,22 @@
 .group {
 
   .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: var(--color-white);
     background-color: transparent;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+    .extra {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      font-size: 0.875rem;
+    }
   }
 
   .body {
