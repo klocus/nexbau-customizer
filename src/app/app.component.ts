@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Locale } from './data/Locale.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Nexbau Customizer';
+  title: string = 'Nexbau Customizer';
+
+  localesList: Locale[] = [
+    { code: 'en-US', label: 'English' },
+    { code: 'pl', label: 'Polski' }
+  ]
 }

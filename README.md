@@ -12,7 +12,7 @@ Run `ng build --configuration=production,pl` to build the project. The build art
 
 ## Regenerate base translation file
 
-Run `ng xi18n --output-path src/i18n` to generate `messages.xlf`
+Run `ng xi18n --output-path src/locales` to generate `messages.xlf`
 
 *More info: https://lokalise.com/blog/angular-i18n/*
 
@@ -84,8 +84,8 @@ condition: {
 
 `field` is the field name we want to check and `value` is the value that must be matched.
 
-## Deploy to GitHub Pages
+## Deploy
 
 ```
-ng build --configuration=production,pl --output-path docs --base-href https://{profile}.github.io/{repo}/ --deploy-url=https://{profile}.github.io/{repo}/
+ng build --prod --localize --base-href https://{domain}/ --deploy-url=https://{domain}/
 ```
