@@ -1,6 +1,8 @@
-# Nexbau
+# Nexbau Customizer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+#### A simple app for configuring doors.
+
+#### https://nexbau-customizer.web.app/en/
 
 ## Development server
 
