@@ -65,10 +65,13 @@ export class CustomizerComponent implements OnInit {
 
     let image: string = '';
     for (let field of this.selectedItem.fields) {
-      image = this.selectedItem.name + '/' + field.name + '-';
-      image += field['options'][field['selected']]['value'] + '.png';
+      if (field['options'][field['selected']]['value']) {
+        image = './assets/img/items/';
+        image += this.selectedItem.name + '/' + field.name + '-';
+        image += field['options'][field['selected']]['value'] + '.png';
 
-      this.images.push(image);
+        this.images.push(image);
+      }
     }
   }
 

@@ -4,103 +4,73 @@ import { FieldType } from './FieldType.enum';
 export const ITEMS: Item[] = [
   {
     id: 1,
-    name: 'one',
-    label: 'One',
+    name: 'flex',
+    label: 'Flex',
     fields: [
       {
-        name: 'base',
-        label: 'Base',
-        type: FieldType.LIST,
-        selected: 0,
-        options: [
-          {
-            label: 'Wood',
-            value: 'wood',
-          },
-          {
-            label: 'Wire',
-            value: 'wire',
-          },
-        ]
-      },
-      {
-        name: 'shell',
-        label: 'Shell color',
-        type: FieldType.GRID,
-        condition: {
-          field: 'base',
-          value: 'wire'
-        },
-        selected: 0,
-        options: [
-          {
-            label: 'Cream',
-            value: 'cream',
-          },
-          {
-            label: 'Ice',
-            value: 'ice',
-          },
-          {
-            label: 'Red',
-            value: 'red',
-          },
-        ]
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: 'two',
-    label: 'Two',
-    fields: [
-      {
-        name: 'color',
-        label: 'Color',
+        name: 'frame',
+        label: $localize`Frame`,
         type: FieldType.GRID,
         selected: 0,
         options: [
           {
-            label: 'Orange',
-            value: 'orange',
+            value: 'anthracite',
+            label: $localize`Anthracite`
           },
           {
-            label: 'Blue',
-            value: 'blue',
-          },
-          {
-            label: 'Green',
-            value: 'green',
-          },
+            value: 'black',
+            label: $localize`Black`
+          }
         ]
       },
-    ],
-  },
-  {
-    id: 3,
-    name: 'three',
-    label: 'Three',
-    fields: [
       {
-        name: 'color',
-        label: 'Color',
+        name: 'filling',
+        label: $localize`Filling`,
         type: FieldType.GRID,
         selected: 0,
         options: [
           {
-            label: 'Orange',
-            value: 'orange',
+            value: 'black',
+            label: $localize`Black`
           },
           {
-            label: 'Blue',
-            value: 'blue',
+            value: 'glass',
+            label: $localize`Glass`
+          }
+        ]
+      },
+      {
+        name: 'handle',
+        label: $localize`Handle`,
+        type: FieldType.GRID,
+        selected: 0,
+        options: [
+          {
+            value: 'black',
+            label: $localize`Black`
           },
           {
-            label: 'Green',
-            value: 'green',
+            value: 'standard',
+            label: $localize`Standard`
+          }
+        ]
+      },
+      {
+        name: 'lock',
+        label: $localize`Lock`,
+        type: FieldType.GRID,
+        selected: 0,
+        options: [
+          {
+            value: 'black',
+            label: $localize`Black`
           },
+          {
+            value: 'standard',
+            label: $localize`Standard`
+          }
         ]
       },
     ],
-  },
+  }
 ];

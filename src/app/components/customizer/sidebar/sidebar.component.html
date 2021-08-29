@@ -16,6 +16,7 @@
       <ul class="field" [ngClass]="field.type">
         <li *ngFor="let option of field.options; index as i" [ngClass]="{ 'active': field.selected === i }">
           <figure (click)="onOptionClick(field.name, option.value)">
+            <img [src]="getOptionIcon(field, option)" alt="">
             <label>{{ option.label }}</label>
           </figure>
         </li>

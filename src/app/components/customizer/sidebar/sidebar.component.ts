@@ -3,6 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Item } from '../../../data/Item.interface';
 import { ActivatedRoute, Router } from "@angular/router";
 import { Field } from '../../../data/Field.interface';
+import { Option } from '../../../data/Option.interface';
 import { Condition } from '../../../data/Condition.interface';
 
 @Component({
@@ -40,6 +41,19 @@ export class SidebarComponent implements OnInit {
     }
 
     return true;
+  }
+
+  public getOptionIcon(field: Field, option: Option): string {
+    let image: string;
+    if (option['value']) {
+      image = './assets/img/items/';
+      image += this.selectedItem.name + '/icons/' + field.name + '-';
+      image += option['value'] + '.png';
+    } else {
+      image = './assets/img/none.png';
+    }
+
+    return image;
   }
 
 }

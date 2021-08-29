@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="pl">
+    <body>
+      <trans-unit id="9041444200911417888" datatype="html">
+        <source>Selected</source>
+        <target>Wybrano</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/customizer/sidebar/accordion/accordion-group.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5330194156702219787" datatype="html">
+        <source>404 Error:</source>
+        <target>Błąd 404:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/not-found/not-found.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4555953598030054253" datatype="html">
+        <source>This option does not exist.</source>
+        <target>Taka opcja nie istnieje.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/not-found/not-found.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8908117042972169424" datatype="html">
+        <source>Frame</source>
+        <target>Rama</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5341493035194583187" datatype="html">
+        <source>Anthracite</source>
+        <target>Antracyt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30300572504753589" datatype="html">
+        <source>Black</source>
+        <target>Czarny</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="990993647424374132" datatype="html">
+        <source>Filling</source>
+        <target>Wypełnienie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="479331809091924923" datatype="html">
+        <source>Glass</source>
+        <target>Szkło</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3778789337095200234" datatype="html">
+        <source>Handle</source>
+        <target>Pochwyt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2798807656507405918" datatype="html">
+        <source>Standard</source>
+        <target>Standard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5635860082093871248" datatype="html">
+        <source>Lock</source>
+        <target>Zamek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/db.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
