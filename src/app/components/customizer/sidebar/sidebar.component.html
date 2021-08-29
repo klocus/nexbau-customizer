@@ -24,3 +24,14 @@
     </app-accordion-group>
   </ng-container>
 </app-accordion>
+
+<div class="tools">
+  <div class="share">
+    <span #span i18n>Link copied to clipboard!</span>
+    <button (click)="onShareClick(span)" i18n>Share</button>
+  </div>
+
+  <select (change)="onLocaleChange($event)">
+    <option *ngFor="let locale of localesList" [value]="locale.code">{{ locale.label }}</option>
+  </select>
+</div>
