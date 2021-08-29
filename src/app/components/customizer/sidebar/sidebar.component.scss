@@ -129,11 +129,12 @@ ul.field {
 .tools {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   margin-top: 1rem;
   padding: 0 1rem 1rem 1rem;
 
   .share {
+    margin-bottom: 1rem;
+
     span {
       display: block;
       margin-bottom: 0.5rem;
