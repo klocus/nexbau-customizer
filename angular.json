@@ -16,7 +16,7 @@
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
-          "pl": "src/locales/messages.pl.xlf"
+          "pl-PL": "src/locales/messages.pl-PL.xlf"
         }
       },
       "root": "",
@@ -71,8 +71,8 @@
               "sourceMap": true,
               "namedChunks": true
             },
-            "pl": {
-              "localize": ["pl"]
+            "pl-PL": {
+              "localize": ["pl-PL"]
             }
           },
           "defaultConfiguration": "production"
@@ -83,8 +83,8 @@
             "production": {
               "browserTarget": "nexbau:build:production"
             },
-            "pl": {
-              "browserTarget": "nexbau:build:pl"
+            "pl-PL": {
+              "browserTarget": "nexbau:build:pl-PL"
             },
             "development": {
               "browserTarget": "nexbau:build:development"

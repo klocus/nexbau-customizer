@@ -32,6 +32,12 @@
   </div>
 
   <select (change)="onLocaleChange($event)">
-    <option *ngFor="let locale of localesList" [value]="locale.code">{{ locale.label }}</option>
+    <option
+      *ngFor="let locale of localesList"
+      [value]="locale.code"
+      [selected]="locale.code === currentLocale"
+    >
+      {{ locale.label }}
+    </option>
   </select>
 </div>

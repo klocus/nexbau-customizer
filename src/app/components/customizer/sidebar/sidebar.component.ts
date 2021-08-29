@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, LOCALE_ID, Inject } from '@angular/core';
 
 import { Item } from '../../../data/Item.interface';
 import { ActivatedRoute, Router } from "@angular/router";
@@ -21,11 +21,12 @@ export class SidebarComponent implements OnInit {
 
   public localesList: Locale[] = [
     { code: 'en-US', label: 'English' },
-    { code: 'pl', label: 'Polski' }
+    { code: 'pl-PL', label: 'Polski' }
   ];
 
   constructor(private route: ActivatedRoute,
-              private router: Router) {
+              private router: Router,
+              @Inject(LOCALE_ID) public currentLocale: string) {
   }
 
   ngOnInit(): void {

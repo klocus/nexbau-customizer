@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve --configuration=pl --open` for a dev server. The app will automatically reload if you change any of the source files.
+Run `ng serve --configuration=pl-PL --open` for a dev server. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build --configuration=production,pl` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build --localize` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Regenerate base translation file
 
@@ -87,5 +87,5 @@ condition: {
 ## Deploy
 
 ```
-ng build --prod --localize --base-href https://{domain}/ --deploy-url=https://{domain}/
+firebase deploy
 ```
