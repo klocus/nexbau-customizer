@@ -8,19 +8,19 @@
     ],
     "rewrites": [
       {
-        "source": "/en-US/**",
-        "destination": "/en-US/index.html"
+        "source": "/en/**",
+        "destination": "/en/index.html"
       },
       {
-        "source": "/pl-PL/**",
-        "destination": "/pl-PL/index.html"
+        "source": "/pl/**",
+        "destination": "/pl/index.html"
       }
     ],
     "redirects": [
       {
-        "source" : "/",
-        "destination" : "/pl-PL",
-        "type" : 301
+        "source": "/",
+        "destination": "/pl",
+        "type": 301
       }
     ]
   }
