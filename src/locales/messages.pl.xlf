@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="370393617101946571" datatype="html">
         <source>Link copied to clipboard!</source>
-        <target>Link został skopiowany do schowka!</target>
+        <target>Łącze zostało skopiowane do schowka!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/customizer/sidebar/sidebar.component.html</context>
           <context context-type="linenumber">30</context>
