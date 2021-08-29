@@ -31,7 +31,6 @@
     <button (click)="onShareClick(span)" i18n>Share</button>
   </div>
 
-  {{ currentLocale }}
   <select (change)="onLocaleChange($event)">
     <option
       *ngFor="let locale of localesList"
