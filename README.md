@@ -84,7 +84,7 @@ condition: {
 
 `field` is the field name we want to check and `value` is the value that must be matched.
 
-## Deploy for GitHub Pages
+## Deploy to GitHub Pages
 
 ```
 ng build --configuration=production,pl --output-path docs --base-href https://{profile}.github.io/{repo}/ --deploy-url=https://{profile}.github.io/{repo}/
