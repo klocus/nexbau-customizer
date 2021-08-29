@@ -20,8 +20,8 @@ export class SidebarComponent implements OnInit {
   private params: any = [];
 
   public localesList: Locale[] = [
-    { code: 'en-US', label: 'English' },
-    { code: 'pl-PL', label: 'Polski' }
+    { code: 'en', label: 'English' },
+    { code: 'pl', label: 'Polski' }
   ];
 
   constructor(private route: ActivatedRoute,

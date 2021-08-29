@@ -14,9 +14,9 @@
         }
       },
       "i18n": {
-        "sourceLocale": "en-US",
+        "sourceLocale": "en",
         "locales": {
-          "pl-PL": "src/locales/messages.pl-PL.xlf"
+          "pl": "src/locales/messages.pl.xlf"
         }
       },
       "root": "",
@@ -51,8 +51,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kb",
+                  "maximumError": "8kb"
                 }
               ],
               "fileReplacements": [
@@ -71,8 +71,8 @@
               "sourceMap": true,
               "namedChunks": true
             },
-            "pl-PL": {
-              "localize": ["pl-PL"]
+            "pl": {
+              "localize": ["pl"]
             }
           },
           "defaultConfiguration": "production"
@@ -83,8 +83,8 @@
             "production": {
               "browserTarget": "nexbau:build:production"
             },
-            "pl-PL": {
-              "browserTarget": "nexbau:build:pl-PL"
+            "pl": {
+              "browserTarget": "nexbau:build:pl"
             },
             "development": {
               "browserTarget": "nexbau:build:development"
