@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -12,14 +12,14 @@
         "destination": "/en-US/index.html"
       },
       {
-        "source": "/pl/**",
-        "destination": "/pl/index.html"
+        "source": "/pl-PL/**",
+        "destination": "/pl-PL/index.html"
       }
     ],
     "redirects": [
       {
         "source" : "/",
-        "destination" : "/pl",
+        "destination" : "/pl-PL",
         "type" : 301
       }
     ]
