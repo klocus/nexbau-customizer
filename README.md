@@ -78,13 +78,22 @@ Add the following object to the item object:
 ```
 ...
 condition: {
-  field: 'color',
-  value: 'blue'
+  relation: 'OR', // Optional, defaults to "AND"
+  items: [
+    {
+      field: 'color', // Field name we want to check
+      value: 'blue', // Value that must be matched
+      compare: '=' // Optional, defaults to "=". Available operators: =, !=
+    },
+    {
+      field: 'color',
+      value: 'green',
+      compare: '='
+    }
+  ]
 },
 ...
 ```
-
-`field` is the field name we want to check and `value` is the value that must be matched.
 
 ## Deploy
 

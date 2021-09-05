@@ -4,7 +4,6 @@ import { Item } from '../../../data/Item.interface';
 import { ActivatedRoute, Router } from "@angular/router";
 import { Field } from '../../../data/Field.interface';
 import { Option } from '../../../data/Option.interface';
-import { Condition } from '../../../data/Condition.interface';
 import { Locale } from '../../../data/Locale.interface';
 
 @Component({
@@ -37,17 +36,6 @@ export class SidebarComponent implements OnInit {
 
   public onOptionClick(name: string, value: string) {
     this.router.navigate([], {queryParams: {[name]: value}, queryParamsHandling: 'merge'});
-  }
-
-  public canDisplay(field: Field): boolean {
-    if (field?.condition) {
-      const condition: Condition = field.condition;
-      const conditionField: Field | undefined = this.selectedItem.fields.find(x => x.name == condition.field);
-
-      return conditionField?.options[conditionField.selected].value === condition.value;
-    }
-
-    return true;
   }
 
   public getOptionIcon(field: Field, option: Option): string {

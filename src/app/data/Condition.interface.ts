@@ -1,4 +1,7 @@
+import { ConditionItem } from './ConditionItem.interface';
+
 export interface Condition {
-  field: string;
-  value: string;
+  relation?: string;
+  satisfied?: boolean;
+  items: ConditionItem[];
 }

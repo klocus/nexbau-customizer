@@ -27,6 +27,7 @@ export class CustomizerComponent implements OnInit {
 
     this.route.queryParams.subscribe(params => {
       this.updateSelectedItemOptions(params);
+      this.handleSelectedItemConditions();
       this.prepareSelectedItemImages();
     });
   }
@@ -44,6 +45,7 @@ export class CustomizerComponent implements OnInit {
       let index: number = this.items.findIndex(x => x.id == params.id);
       if (index > -1) {
         this.selectedItem = this.items[index];
+        this.handleSelectedItemConditions();
         this.prepareSelectedItemImages();
       } else {
         this.router.navigate(['/not-found']);
@@ -62,12 +64,44 @@ export class CustomizerComponent implements OnInit {
     }
   }
 
+  private handleSelectedItemConditions() {
+    for (let field of this.selectedItem.fields) {
+      if (field?.condition) {
+        const condition: Condition = field.condition;
+        const conditionRelation: string | undefined = field.condition?.relation;
+
+        let result: boolean[] = [];
+        for (const item of condition.items) {
+          const conditionField: Field | undefined = this.selectedItem.fields.find(x => x.name == item.field);
+
+          switch (item.compare || '=') {
+            case '=':
+              result.push(conditionField?.options[conditionField.selected].value === item.value);
+              break;
+
+            case '!=':
+              result.push(conditionField?.options[conditionField.selected].value !== item.value);
+              break;
+          }
+        }
+
+        if (!conditionRelation || conditionRelation === 'AND') {
+          field.noRender = result.includes(false);
+        } else {
+          field.noRender = !result.includes(true);
+        }
+
+        field.condition.satisfied = !field.noRender;
+      }
+    }
+  }
+
   private prepareSelectedItemImages(): void {
     this.images = [];
 
     let image: string = '';
     for (let field of this.selectedItem.fields) {
-      if (this.canRenderImage(field)) {
+      if (!field?.noRender && field['options'][field['selected']]['value']) {
         image = './assets/img/items/';
         image += this.selectedItem.name + '/' + field.name + '-';
         image += field['options'][field['selected']]['value'] + '.png';
@@ -75,25 +109,6 @@ export class CustomizerComponent implements OnInit {
         this.images.push(image);
       }
     }
-  }
-
-  private canRenderImage(field: Field): boolean {
-    if (field?.noRender) {
-      return false;
-    }
-
-    if (!field['options'][field['selected']]['value']) {
-      return false;
-    }
-
-    if (field?.condition) {
-      const condition: Condition = field.condition;
-      const conditionField: Field | undefined = this.selectedItem.fields.find(x => x.name == condition.field);
-
-      return conditionField?.options[conditionField.selected].value === condition.value;
-    }
-
-    return true;
   }
 
   public zoom(type: string): void {

@@ -75,6 +75,19 @@ export const ITEMS: Item[] = [
         name: 'lock',
         label: $localize`Lock`,
         type: FieldType.GRID,
+        condition: {
+          relation: 'OR',
+          items: [
+            {
+              field: 'handle',
+              value: 'black'
+            },
+            {
+              field: 'handle',
+              value: 'standard'
+            }
+          ]
+        },
         selected: 0,
         options: [
           {
@@ -129,8 +142,12 @@ export const ITEMS: Item[] = [
         label: $localize`Layout color`,
         type: FieldType.GRID,
         condition: {
-          field: 'layout',
-          value: '001'
+          items: [
+            {
+              field: 'layout',
+              value: '001'
+            }
+          ]
         },
         selected: 0,
         options: [
@@ -383,8 +400,12 @@ export const ITEMS: Item[] = [
         label: $localize`Layout color`,
         type: FieldType.GRID,
         condition: {
-          field: 'layout',
-          value: '002'
+          items: [
+            {
+              field: 'layout',
+              value: '002'
+            }
+          ]
         },
         selected: 0,
         options: [
@@ -399,8 +420,12 @@ export const ITEMS: Item[] = [
         label: $localize`Layout color`,
         type: FieldType.GRID,
         condition: {
-          field: 'layout',
-          value: '003'
+          items: [
+            {
+              field: 'layout',
+              value: '003'
+            }
+          ]
         },
         selected: 0,
         options: [
@@ -415,8 +440,12 @@ export const ITEMS: Item[] = [
         label: $localize`Layout color`,
         type: FieldType.GRID,
         condition: {
-          field: 'layout',
-          value: '004'
+          items: [
+            {
+              field: 'layout',
+              value: '004'
+            }
+          ]
         },
         selected: 0,
         options: [
@@ -431,8 +460,12 @@ export const ITEMS: Item[] = [
         label: $localize`Layout color`,
         type: FieldType.GRID,
         condition: {
-          field: 'layout',
-          value: '005'
+          items: [
+            {
+              field: 'layout',
+              value: '005'
+            }
+          ]
         },
         selected: 0,
         options: [
@@ -447,8 +480,12 @@ export const ITEMS: Item[] = [
         label: $localize`Layout color`,
         type: FieldType.GRID,
         condition: {
-          field: 'layout',
-          value: '006'
+          items: [
+            {
+              field: 'layout',
+              value: '006'
+            }
+          ]
         },
         selected: 0,
         options: [
