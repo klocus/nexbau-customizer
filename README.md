@@ -6,7 +6,7 @@
 
 ## Development server
 
-Run `ng serve --configuration=pl-PL --open` for a dev server. The app will automatically reload if you change any of the source files.
+Run `ng serve --configuration=pl --open` for a dev server. The app will automatically reload if you change any of the source files.
 
 ## Build
 

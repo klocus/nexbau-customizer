@@ -1,5 +1,10 @@
 :host {
   height: 100%;
+
+  @media screen and (min-width: 961px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 section {
@@ -9,6 +14,10 @@ section {
   flex-wrap: wrap;
   height: 100vh;
   overflow: hidden;
+
+  @media screen and (min-width: 961px) {
+    width: calc(100% - 420px);
+  }
 
   .tools {
     position: absolute;
@@ -91,21 +100,10 @@ section {
   }
 }
 
-aside {
-  position: relative;
-  background-color: var(--color-secondary);
-}
+app-sidebar {
+  width: 100%;
 
-@media screen and (min-width: 961px) {
-  :host {
-    display: flex;
-  }
-
-  section {
-    width: 77%;
-  }
-
-  aside {
-    width: 33%;
+  @media screen and (min-width: 961px) {
+    width: 420px;
   }
 }

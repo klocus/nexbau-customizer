@@ -1,43 +1,45 @@
-<header class="logo">
-  <a href="https://nexbau.com">
-    <img src="./assets/img/logo.svg" alt="Logo Nexbau">
-  </a>
-</header>
+<aside>
+  <header class="logo">
+    <a href="https://nexbau.com">
+      <img src="./assets/img/logo.svg" alt="Logo Nexbau">
+    </a>
+  </header>
 
-<ul class="type">
-    <li *ngFor="let door of items">
-        <a [routerLink]="['/doors', door.id]" [routerLinkActive]="'active'">{{ door.label }}</a>
-    </li>
-</ul>
+  <ul class="type">
+      <li *ngFor="let door of items">
+          <a [routerLink]="['/doors', door.id]" [routerLinkActive]="'active'">{{ door.label }}</a>
+      </li>
+  </ul>
 
-<app-accordion>
-  <ng-container *ngFor="let field of selectedItem.fields">
-    <app-accordion-group *ngIf="canDisplay(field)" [title]="field.label" [extra]="field.options[field.selected].label">
-      <ul class="field" [ngClass]="field.type">
-        <li *ngFor="let option of field.options; index as i" [ngClass]="{ 'active': field.selected === i }">
-          <figure (click)="onOptionClick(field.name, option.value)">
-            <img [src]="getOptionIcon(field, option)" alt="">
-            <label>{{ option.label }}</label>
-          </figure>
-        </li>
-      </ul>
-    </app-accordion-group>
-  </ng-container>
-</app-accordion>
+  <app-accordion>
+    <ng-container *ngFor="let field of selectedItem.fields">
+      <app-accordion-group *ngIf="canDisplay(field)" [title]="field.label" [extra]="field.options[field.selected].label">
+        <ul class="field" [ngClass]="field.type">
+          <li *ngFor="let option of field.options; index as i" [ngClass]="{ 'active': field.selected === i }">
+            <figure (click)="onOptionClick(field.name, option.value)">
+              <img [src]="getOptionIcon(field, option)" alt="">
+              <label>{{ option.label }}</label>
+            </figure>
+          </li>
+        </ul>
+      </app-accordion-group>
+    </ng-container>
+  </app-accordion>
 
-<div class="tools">
-  <div class="share">
-    <span #span i18n>Link copied to clipboard!</span>
-    <button (click)="onShareClick(span)" i18n>Share</button>
+  <div class="tools">
+    <div class="share">
+      <span #span i18n>Link copied to clipboard!</span>
+      <button (click)="onShareClick(span)" i18n>Share</button>
+    </div>
+
+    <select (change)="onLocaleChange($event)">
+      <option
+        *ngFor="let locale of localesList"
+        [value]="locale.code"
+        [selected]="locale.code == currentLocale"
+      >
+        {{ locale.label }}
+      </option>
+    </select>
   </div>
-
-  <select (change)="onLocaleChange($event)">
-    <option
-      *ngFor="let locale of localesList"
-      [value]="locale.code"
-      [selected]="locale.code == currentLocale"
-    >
-      {{ locale.label }}
-    </option>
-  </select>
-</div>
+</aside>

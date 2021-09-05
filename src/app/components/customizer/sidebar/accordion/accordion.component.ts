@@ -26,7 +26,7 @@ export class AccordionComponent implements AfterContentInit {
   private listGroups(): void {
     setTimeout(() => {
       // Set active first element
-      this.groups.toArray()[0].opened = true;
+      //this.groups.toArray()[0].opened = true;
       // Loop through all groups
       this.groups.toArray().forEach((group) => {
         // Subscribe for event "toggle" & open the group

@@ -5,10 +5,8 @@
   </div>
 
   <figure *ngFor="let src of images">
-    <img [src]="src" [style]="'transform: scale(' + scale + ');'" alt="">
+    <img [src]="src" [style]="'transform: scale(' + scale + ');'" draggable="false" alt="">
   </figure>
 </section>
 
-<aside>
-  <app-sidebar [items]="items" [selected-item]="selectedItem"></app-sidebar>
-</aside>
+<app-sidebar [items]="items" [selected-item]="selectedItem"></app-sidebar>

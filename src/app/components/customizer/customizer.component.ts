@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ItemService } from '../../services/item.service';
 import { Item } from '../../data/Item.interface';
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { Field } from '../../data/Field.interface';
+import { Condition } from '../../data/Condition.interface';
 
 @Component({
   selector: 'app-customizer',
@@ -65,7 +67,7 @@ export class CustomizerComponent implements OnInit {
 
     let image: string = '';
     for (let field of this.selectedItem.fields) {
-      if (field['options'][field['selected']]['value']) {
+      if (this.canRenderImage(field)) {
         image = './assets/img/items/';
         image += this.selectedItem.name + '/' + field.name + '-';
         image += field['options'][field['selected']]['value'] + '.png';
@@ -73,6 +75,25 @@ export class CustomizerComponent implements OnInit {
         this.images.push(image);
       }
     }
+  }
+
+  private canRenderImage(field: Field): boolean {
+    if (field?.noRender) {
+      return false;
+    }
+
+    if (!field['options'][field['selected']]['value']) {
+      return false;
+    }
+
+    if (field?.condition) {
+      const condition: Condition = field.condition;
+      const conditionField: Field | undefined = this.selectedItem.fields.find(x => x.name == condition.field);
+
+      return conditionField?.options[conditionField.selected].value === condition.value;
+    }
+
+    return true;
   }
 
   public zoom(type: string): void {

@@ -6,7 +6,9 @@ export interface Field {
   name: string;
   label: string;
   type: FieldType;
+  noRender?: boolean;
   selected: number;
   condition?: Condition;
   options: Option[];
 }
+
