@@ -30,6 +30,10 @@ export const ITEMS: Item[] = [
         selected: 0,
         options: [
           {
+            value: '',
+            label: $localize`None`
+          },
+          {
             value: 'glass-black',
             label: $localize`Black glass`
           },
