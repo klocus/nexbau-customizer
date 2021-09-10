@@ -20,7 +20,7 @@ Run `ng xi18n --output-path src/locales` to generate `messages.xlf`
 
 ## Item options
 
-All available product configuration fields are available in the `/src/app/data/db.ts`.
+All available product configuration fields are available in the `/src/app/data/Items.database.ts`.
 
 ### Structure of item options
 

@@ -42,7 +42,7 @@ export class CustomizerComponent implements OnInit {
 
   private getSelectedItem(): void {
     this.route.params.subscribe(params => {
-      let index: number = this.items.findIndex(x => x.id == params.id);
+      let index: number = this.items.findIndex(x => x.name == params.name);
       if (index > -1) {
         this.selectedItem = this.items[index];
         this.handleSelectedItemConditions();

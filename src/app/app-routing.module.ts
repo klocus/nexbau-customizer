@@ -4,8 +4,8 @@ import { CustomizerComponent } from "./components/customizer/customizer.componen
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'doors/1', pathMatch: 'full'},
-  {path: 'doors/:id', component: CustomizerComponent},
+  {path: '', redirectTo: 'doors/flex', pathMatch: 'full'},
+  {path: 'doors/:name', component: CustomizerComponent},
   {path: '**', redirectTo: 'not-found', pathMatch: 'full'},
   {path: 'not-found', component: NotFoundComponent}
 ];

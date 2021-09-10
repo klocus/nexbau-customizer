@@ -7,7 +7,7 @@
 
   <ul class="type">
       <li *ngFor="let door of items">
-          <a [routerLink]="['/doors', door.id]" [routerLinkActive]="'active'">{{ door.label }}</a>
+          <a [routerLink]="['/doors', door.name]" [routerLinkActive]="'active'">{{ door.label }}</a>
       </li>
   </ul>
 
