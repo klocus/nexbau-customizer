@@ -64,11 +64,11 @@ section {
       }
 
       &.zoom-in:after {
-        mask-image: url('../../../assets/images/plus.svg');
+        mask-image: url('/assets/images/plus.svg');
       }
 
       &.zoom-out:after {
-        mask-image: url('../../../assets/images/minus.svg');
+        mask-image: url('/assets/images/minus.svg');
       }
     }
   }
