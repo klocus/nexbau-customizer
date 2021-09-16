@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm ci
       - run: npm run-script build
-      - run: sed -i 's+url(/assets/+url(/en/assets/+g' en/*.css
-      - run: sed -i 's+url(/assets/+url(/pl/assets/+g' pl/*.css
+      - run: sed -i 's+url(/assets/+url(/en/assets/+g' dist/en/*.css
+      - run: sed -i 's+url(/assets/+url(/pl/assets/+g' dist/pl/*.css
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
