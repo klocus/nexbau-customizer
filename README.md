@@ -59,14 +59,14 @@ Each field is a separate layer, so it is important that the image files are tran
 The paths of graphic files of particular options *(layers)* are created according to the following scheme:
 
 ```
-/assets/img/items/{item_name}/{field_name}-{option_value}.png
+/assets/images/items/{item_name}/{field_name}-{option_value}.png
 ```
 
 So for the earlier item example, the following paths will be generated:
 
 ```
-/assets/img/items/itemName/color-blue.png
-/assets/img/items/itemName/color-green.png
+/assets/images/items/itemName/color-blue.png
+/assets/images/items/itemName/color-green.png
 ```
 
 ### Conditions

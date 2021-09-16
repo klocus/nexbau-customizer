@@ -102,7 +102,7 @@ export class CustomizerComponent implements OnInit {
     let image: string = '';
     for (let field of this.selectedItem.fields) {
       if (!field?.noRender && field['options'][field['selected']]['value']) {
-        image = './assets/img/items/';
+        image = './assets/images/items/';
         image += this.selectedItem.name + '/' + field.name + '-';
         image += field['options'][field['selected']]['value'] + '.png';
 

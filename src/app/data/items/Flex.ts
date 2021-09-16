@@ -41,8 +41,8 @@ export const Flex: Item = {
           label: $localize`Glass`
         },
         {
-          value: 'glass-fragment',
-          label: $localize`Glass fragment`
+          value: 'glass-partial',
+          label: $localize`Partial glazing`
         }
       ]
     },

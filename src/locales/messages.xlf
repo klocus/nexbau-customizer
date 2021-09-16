@@ -43,6 +43,10 @@
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="5341493035194583187" datatype="html">
         <source>Anthracite</source>
@@ -64,6 +68,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="990993647424374132" datatype="html">
@@ -95,12 +107,24 @@
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">94</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="55022257430308258" datatype="html">
         <source>Black glass</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">145</context>
         </context-group>
       </trans-unit>
       <trans-unit id="479331809091924923" datatype="html">
@@ -110,8 +134,8 @@
           <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="711420868776936531" datatype="html">
-        <source>Glass fragment</source>
+      <trans-unit id="4048283413834895212" datatype="html">
+        <source>Partial glazing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">45</context>
@@ -126,6 +150,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
           <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2798807656507405918" datatype="html">
@@ -158,6 +186,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5474901734608805094" datatype="html">
@@ -260,6 +292,120 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
           <context context-type="linenumber">149</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8052128066871436029" datatype="html">
+        <source>Oak</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6279009597526014418" datatype="html">
+        <source>Meranti</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="304615595334876147" datatype="html">
+        <source>Walnut</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="265773158334492361" datatype="html">
+        <source>Silver</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8206666334393784784" datatype="html">
+        <source>Left panel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5672184848806167420" datatype="html">
+        <source>Milled oak</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30445888602369173" datatype="html">
+        <source>Milled walnut</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8813891552169071690" datatype="html">
+        <source>Milled meranti</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6226803970173835522" datatype="html">
+        <source>Steel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="769596465863954556" datatype="html">
+        <source>Printed steel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2118341602061311597" datatype="html">
+        <source>Quartz sinter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1773682335640213354" datatype="html">
+        <source>Right panel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8075255632314152996" datatype="html">
+        <source>Milk glass</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="195768881140773427" datatype="html">
+        <source>Polished steel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">153</context>
         </context-group>
       </trans-unit>
     </body>
