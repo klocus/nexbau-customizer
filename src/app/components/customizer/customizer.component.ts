@@ -12,9 +12,18 @@ import { Condition } from '../../data/Condition.interface';
 })
 export class CustomizerComponent implements OnInit {
 
+  public loading: boolean = true;
+
   public items: Item[] = [];
+
+  public preloadImages: HTMLImageElement[] = [];
+
+  public loadedImages: number = 0;
+
   public selectedItem!: Item;
-  public images: string[] = [];
+
+  public selectedItemImages: string[] = [];
+
   public scale: number = 1.0;
 
   constructor(private route: ActivatedRoute,
@@ -36,8 +45,34 @@ export class CustomizerComponent implements OnInit {
     this.itemService.getDoors()
       .subscribe((items) => {
         this.items = items;
+        this.preloadAllImages();
         this.getSelectedItem();
       });
+  }
+
+  private preloadAllImages(): void {
+    for (let item of this.items) {
+      for (let field of item.fields) {
+        for (let option of field.options) {
+          if (!field?.noRender && option.value) {
+            const image: HTMLImageElement = new Image();
+            image.src = `/assets/images/items/${item.name}/${field.name}-${option.value}.png`;
+            image.onload = () => {
+              this.countPreloadedImages();
+            }
+            this.preloadImages.push(image);
+          }
+        }
+      }
+    }
+  }
+
+  private countPreloadedImages() {
+    this.loadedImages++;
+
+    if (this.preloadImages.length === this.loadedImages) {
+      this.loading = false;
+    }
   }
 
   private getSelectedItem(): void {
@@ -97,7 +132,7 @@ export class CustomizerComponent implements OnInit {
   }
 
   private prepareSelectedItemImages(): void {
-    this.images = [];
+    this.selectedItemImages = [];
 
     let image: string = '';
     for (let field of this.selectedItem.fields) {
@@ -106,7 +141,7 @@ export class CustomizerComponent implements OnInit {
         image += this.selectedItem.name + '/' + field.name + '-';
         image += field['options'][field['selected']]['value'] + '.png';
 
-        this.images.push(image);
+        this.selectedItemImages.push(image);
       }
     }
   }

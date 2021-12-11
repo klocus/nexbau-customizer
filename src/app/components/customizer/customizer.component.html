@@ -1,10 +1,12 @@
+<div *ngIf="loading" class="preloader"></div>
+
 <section>
   <div class="tools">
     <button class="zoom-in" [disabled]="scale > 1.4" (click)="zoom('+')">+</button>
     <button class="zoom-out" [disabled]="scale < 1.1" (click)="zoom('-')">-</button>
   </div>
 
-  <figure *ngFor="let src of images">
+  <figure *ngFor="let src of selectedItemImages">
     <img [src]="src" [style]="'transform: scale(' + scale + ');'" draggable="false" alt="">
   </figure>
 </section>
