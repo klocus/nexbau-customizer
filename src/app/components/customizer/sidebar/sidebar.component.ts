@@ -1,10 +1,10 @@
 import { Component, Input, OnInit, LOCALE_ID, Inject } from '@angular/core';
-
 import { Item } from '../../../data/Item.interface';
 import { ActivatedRoute, Router } from "@angular/router";
 import { Field } from '../../../data/Field.interface';
 import { Option } from '../../../data/Option.interface';
 import { Locale } from '../../../data/Locale.interface';
+import * as html2pdf from 'html2pdf.js';
 
 @Component({
   selector: 'app-sidebar',
@@ -48,6 +48,12 @@ export class SidebarComponent implements OnInit {
       image = '/assets/images/none.png';
     }
     return image;
+  }
+
+  public onSaveClick() {
+    html2pdf(document.body, {
+      filename: 'Nexbau-Customizer.pdf'
+    });
   }
 
   public onShareClick(element: HTMLElement) {

@@ -47,7 +47,10 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "html2pdf.js"
+            ]
           },
           "configurations": {
             "production": {

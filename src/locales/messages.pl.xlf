@@ -18,12 +18,20 @@
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3768927257183755959" datatype="html">
+        <source>Save</source>
+        <target>Zapisz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/customizer/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="7419704019640008953" datatype="html">
         <source>Share</source>
         <target>Udostępnij</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/customizer/sidebar/sidebar.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5330194156702219787" datatype="html">
