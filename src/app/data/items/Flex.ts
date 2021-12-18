@@ -54,11 +54,11 @@ export const Flex: Item = {
       options: [
         {
           value: 'black',
-          label: $localize`Black`
+          label: $localize`Black short`
         },
         {
           value: 'standard',
-          label: $localize`Standard`
+          label: $localize`Stainless steel short`
         },
         {
           value: 'black-long',
@@ -66,7 +66,7 @@ export const Flex: Item = {
         },
         {
           value: 'standard-long',
-          label: $localize`Standard Long`
+          label: $localize`Stainless steel long`
         }
       ]
     },

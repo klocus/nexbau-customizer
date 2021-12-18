@@ -38,7 +38,7 @@ export const Roots: Item = {
         },
         {
           value: 'silver',
-          label: $localize`Silver`
+          label: $localize`Stainless steel`
         }
       ]
     },
