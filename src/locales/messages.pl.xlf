@@ -200,7 +200,7 @@
       </trans-unit>
       <trans-unit id="8930222350207095180" datatype="html">
         <source>Stainless steel long</source>
-        <target>Stal szlachetna krótki</target>
+        <target>Stal szlachetna długi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">69</context>
