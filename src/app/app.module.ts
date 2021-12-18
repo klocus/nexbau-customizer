@@ -8,6 +8,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { CustomizerComponent } from './components/customizer/customizer.component';
 import { AccordionComponent } from './components/customizer/sidebar/accordion/accordion.component';
 import { AccordionGroupComponent } from './components/customizer/sidebar/accordion/accordion-group.component';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,12 @@ import { AccordionGroupComponent } from './components/customizer/sidebar/accordi
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: PathLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

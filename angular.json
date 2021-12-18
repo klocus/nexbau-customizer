@@ -14,9 +14,15 @@
         }
       },
       "i18n": {
-        "sourceLocale": "en",
+        "sourceLocale": {
+          "code": "en",
+          "baseHref": "/en/"
+        },
         "locales": {
-          "pl": "src/locales/messages.pl.xlf"
+          "pl": {
+            "translation": "src/locales/messages.pl.xlf",
+            "baseHref": "/pl/"
+          }
         }
       },
       "root": "",

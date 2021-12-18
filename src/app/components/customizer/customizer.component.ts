@@ -56,7 +56,7 @@ export class CustomizerComponent implements OnInit {
         for (let option of field.options) {
           if (!field?.noRender && option.value) {
             const image: HTMLImageElement = new Image();
-            image.src = `/assets/images/items/${item.name}/${field.name}-${option.value}.png`;
+            image.src = `./assets/images/items/${item.name}/${field.name}-${option.value}.png`;
             image.onload = () => {
               this.countPreloadedImages();
             }
@@ -137,7 +137,7 @@ export class CustomizerComponent implements OnInit {
     let image: string = '';
     for (let field of this.selectedItem.fields) {
       if (!field?.noRender && field['options'][field['selected']]['value']) {
-        image = '/assets/images/items/';
+        image = './assets/images/items/';
         image += this.selectedItem.name + '/' + field.name + '-';
         image += field['options'][field['selected']]['value'] + '.png';
 

@@ -2,7 +2,7 @@
 
 #### A simple app for configuring doors.
 
-#### https://nexbau-customizer.web.app/en/
+#### https://new.nexbau.com/konfigurator/en/
 
 ## Development server
 
@@ -11,6 +11,26 @@ Run `ng serve --configuration=pl --open` for a dev server. The app will automati
 ## Build
 
 Run `ng build --localize` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+### .htaccess
+
+Rules for each directory with built locale:
+
+```
+RewriteEngine On
+
+# Redirection to HTTPS:
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Redirection of requests to index.html
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^.*$ - [NC,L]
+# Redirect all non-file routes to index.html
+RewriteRule ^(?!.*\.).*$ index.html [NC,L]
+
+```
 
 ## Regenerate base translation file
 
@@ -95,8 +115,8 @@ condition: {
 ...
 ```
 
-## Deploy
+## Important notice
 
-```
-firebase deploy
-```
+### Cloning and forking of this repository is prohibited. This is not a free license project!
+
+Copyright by NEXBAU Sp. z o.o. All rights reserved.
