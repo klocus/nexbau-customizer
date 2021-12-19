@@ -12,7 +12,7 @@ import { Condition } from '../../data/Condition.interface';
 })
 export class CustomizerComponent implements OnInit {
 
-  public loading: boolean = true;
+  public loading: boolean = false;
 
   public items: Item[] = [];
 
