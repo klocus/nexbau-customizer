@@ -21,8 +21,8 @@ export const Roots: Item = {
           label: $localize`Meranti`
         },
         {
-          value: 'walnut',
-          label: $localize`Walnut`
+          value: 'india',
+          label: $localize`India`
         }
       ]
     },
@@ -48,10 +48,6 @@ export const Roots: Item = {
       type: FieldType.GRID,
       selected: 0,
       options: [
-        {
-          value: '',
-          label: $localize`None`
-        },
         {
           value: 'black',
           label: $localize`Black`

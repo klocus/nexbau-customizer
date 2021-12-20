@@ -90,10 +90,6 @@ export const Flex: Item = {
       selected: 0,
       options: [
         {
-          value: '',
-          label: $localize`None`
-        },
-        {
           value: 'black',
           label: $localize`Black`
         },

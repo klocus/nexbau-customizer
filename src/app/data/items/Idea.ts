@@ -7,8 +7,8 @@ export const Idea: Item = {
   label: 'Idea',
   fields: [
     {
-      name: 'filling',
-      label: $localize`Filling`,
+      name: 'frame',
+      label: $localize`Frame`,
       type: FieldType.GRID,
       condition: {
         items: [
@@ -20,10 +20,6 @@ export const Idea: Item = {
       },
       selected: 0,
       options: [
-        {
-          value: 'shaped-ral-base',
-          label: 'RAL-base'
-        },
         {
           value: 'shaped-ral-1026',
           label: 'RAL-1026',
@@ -122,8 +118,8 @@ export const Idea: Item = {
       ]
     },
     {
-      name: 'filling',
-      label: $localize`Filling`,
+      name: 'frame',
+      label: $localize`Frame`,
       type: FieldType.GRID,
       condition: {
         items: [
@@ -237,8 +233,8 @@ export const Idea: Item = {
       ]
     },
     {
-      name: 'filling',
-      label: $localize`Filling`,
+      name: 'frame',
+      label: $localize`Frame`,
       type: FieldType.GRID,
       condition: {
         items: [
@@ -352,8 +348,8 @@ export const Idea: Item = {
       ]
     },
     {
-      name: 'filling',
-      label: $localize`Filling`,
+      name: 'frame',
+      label: $localize`Frame`,
       type: FieldType.GRID,
       condition: {
         items: [
@@ -467,8 +463,8 @@ export const Idea: Item = {
       ]
     },
     {
-      name: 'filling',
-      label: $localize`Filling`,
+      name: 'frame',
+      label: $localize`Frame`,
       type: FieldType.GRID,
       condition: {
         items: [
@@ -527,7 +523,7 @@ export const Idea: Item = {
         {
           value: 'bottom-ral-7000',
           label: 'RAL-7000',
-          icon: 'ral-700'
+          icon: 'ral-7000'
         },
         {
           value: 'bottom-ral-7002',
@@ -582,8 +578,8 @@ export const Idea: Item = {
       ]
     },
     {
-      name: 'filling',
-      label: $localize`Filling`,
+      name: 'frame',
+      label: $localize`Frame`,
       type: FieldType.GRID,
       condition: {
         items: [
@@ -887,11 +883,13 @@ export const Idea: Item = {
       options: [
         {
           value: 'long-black',
-          label: $localize`Black`
+          label: $localize`Black`,
+          icon: 'lock-black'
         },
         {
           value: 'long-silver',
-          label: $localize`Silver`
+          label: $localize`Silver`,
+          icon: 'lock-silver'
         }
       ]
     },
@@ -1058,7 +1056,7 @@ export const Idea: Item = {
         },
         {
           value: 'varnish-concrete',
-          label: $localize`Structural varnish` + ' Concrete'
+          label: $localize`Structural varnish` + ' ' + $localize`Concrete`
         },
         {
           value: 'varnish-rust',

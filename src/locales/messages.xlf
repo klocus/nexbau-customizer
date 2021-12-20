@@ -51,6 +51,30 @@
           <context context-type="linenumber">11</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">352</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">467</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">582</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
@@ -70,7 +94,35 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">770</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">800</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">830</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">860</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">886</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">912</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">941</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
@@ -78,7 +130,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="990993647424374132" datatype="html">
@@ -86,18 +138,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
           <context context-type="linenumber">27</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">83</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">107</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">135</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6252070156626006029" datatype="html">
@@ -107,16 +147,8 @@
           <context context-type="linenumber">33</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">94</context>
-        </context-group>
-        <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">141</context>
+          <context context-type="linenumber">137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="55022257430308258" datatype="html">
@@ -127,7 +159,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">145</context>
+          <context context-type="linenumber">141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="479331809091924923" datatype="html">
@@ -152,7 +184,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">693</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
@@ -194,6 +226,14 @@
           <context context-type="linenumber">75</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">898</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">926</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
@@ -202,117 +242,192 @@
         <source>Standard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5474901734608805094" datatype="html">
         <source>Layout</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6479299456144394226" datatype="html">
         <source>Layout color</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">141</context>
+          <context context-type="linenumber">137</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">399</context>
+          <context context-type="linenumber">395</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">419</context>
+          <context context-type="linenumber">415</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">439</context>
+          <context context-type="linenumber">435</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">459</context>
+          <context context-type="linenumber">455</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Flex.ts</context>
-          <context context-type="linenumber">479</context>
+          <context context-type="linenumber">475</context>
         </context-group>
       </trans-unit>
       <trans-unit id="72453472001117374" datatype="html">
         <source>Shaped in the door plane</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">699</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3202069057858481037" datatype="html">
         <source>Flushed with the door plane</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">704</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1590908159937808814" datatype="html">
         <source>Mounted to the door plane</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">709</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3917647486124108668" datatype="html">
         <source>Long handle</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">714</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3224107301892139327" datatype="html">
         <source>Handle position</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">35</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">721</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6293970137138896363" datatype="html">
         <source>Top</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">49</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">740</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3568940932272598597" datatype="html">
         <source>Bottom</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">745</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9099240323801778627" datatype="html">
+        <source>Handle color</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">752</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="linenumber">782</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">812</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">842</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">872</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="265773158334492361" datatype="html">
+        <source>Silver</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">775</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">805</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">835</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">865</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">891</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">920</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">945</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4347200253005762143" datatype="html">
+        <source>Satin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">916</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5767446336938113608" datatype="html">
+        <source>Panel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">951</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6506863972313499800" datatype="html">
         <source>Structural varnish</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
-          <context context-type="linenumber">149</context>
+          <context context-type="linenumber">1055</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">1059</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">1063</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
           <context context-type="linenumber">97</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="1546059479812691543" datatype="html">
+        <source>Concrete</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">101</context>
+          <context context-type="sourcefile">src/app/data/items/Idea.ts</context>
+          <context context-type="linenumber">1059</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8052128066871436029" datatype="html">
@@ -329,8 +444,8 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="304615595334876147" datatype="html">
-        <source>Walnut</source>
+      <trans-unit id="212820117866187249" datatype="html">
+        <source>India</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
           <context context-type="linenumber">25</context>
@@ -343,85 +458,78 @@
           <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="265773158334492361" datatype="html">
-        <source>Silver</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">61</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="8206666334393784784" datatype="html">
         <source>Left panel</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5672184848806167420" datatype="html">
         <source>Milled oak</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">101</context>
         </context-group>
       </trans-unit>
       <trans-unit id="30445888602369173" datatype="html">
         <source>Milled walnut</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="linenumber">105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8813891552169071690" datatype="html">
         <source>Milled meranti</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6226803970173835522" datatype="html">
         <source>Steel</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">117</context>
+          <context context-type="linenumber">113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="769596465863954556" datatype="html">
         <source>Printed steel</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">121</context>
+          <context context-type="linenumber">117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2118341602061311597" datatype="html">
         <source>Quartz sinter</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">121</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">129</context>
+          <context context-type="linenumber">125</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1773682335640213354" datatype="html">
         <source>Right panel</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">135</context>
+          <context context-type="linenumber">131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8075255632314152996" datatype="html">
         <source>Milk glass</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">149</context>
+          <context context-type="linenumber">145</context>
         </context-group>
       </trans-unit>
       <trans-unit id="195768881140773427" datatype="html">
         <source>Polished steel</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/data/items/Roots.ts</context>
-          <context context-type="linenumber">153</context>
+          <context context-type="linenumber">149</context>
         </context-group>
       </trans-unit>
     </body>
