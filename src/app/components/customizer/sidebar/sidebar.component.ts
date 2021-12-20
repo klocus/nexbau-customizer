@@ -40,13 +40,16 @@ export class SidebarComponent implements OnInit {
 
   public getOptionIcon(field: Field, option: Option): string {
     let image: string;
-    if (option['value']) {
-      image = './assets/images/items/';
-      image += this.selectedItem.name + '/icons/' + field.name + '-';
-      image += option['value'] + '.png';
+    if (option.icon) {
+      image = `./assets/images/items/${this.selectedItem.name}/icons/${option['icon']}.png`;
     } else {
-      image = './assets/images/none.png';
+      if (option.value) {
+        image = `./assets/images/items/${this.selectedItem.name}/icons/${field.name}-${option['value']}.png`;
+      } else {
+        image = './assets/images/none.png';
+      }
     }
+    
     return image;
   }
 

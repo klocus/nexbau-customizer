@@ -54,14 +54,22 @@ export class CustomizerComponent implements OnInit {
     for (let item of this.items) {
       for (let field of item.fields) {
         for (let option of field.options) {
-          if (!field?.noRender && option.value) {
-            const image: HTMLImageElement = new Image();
-            image.src = `./assets/images/items/${item.name}/${field.name}-${option.value}.png`;
-            image.onload = () => {
-              this.countPreloadedImages();
-            }
-            this.preloadImages.push(image);
+          if (field?.noRender || !option.value) {
+            continue;
           }
+          const image: HTMLImageElement = new Image();
+          if (option.hasOwnProperty('image')) {
+            if (option.image === '') {
+              continue;
+            }
+            image.src = `./assets/images/items/${item.name}/${option.image}.png`;
+          } else {
+            image.src = `./assets/images/items/${item.name}/${field.name}-${option.value}.png`;
+          }
+          image.onload = () => {
+            this.countPreloadedImages();
+          }
+          this.preloadImages.push(image);
         }
       }
     }
@@ -136,13 +144,20 @@ export class CustomizerComponent implements OnInit {
 
     let image: string = '';
     for (let field of this.selectedItem.fields) {
-      if (!field?.noRender && field['options'][field['selected']]['value']) {
-        image = './assets/images/items/';
-        image += this.selectedItem.name + '/' + field.name + '-';
-        image += field['options'][field['selected']]['value'] + '.png';
-
-        this.selectedItemImages.push(image);
+      if (field?.noRender || !field['options'][field['selected']]['value']) {
+        continue;
       }
+
+      if (field['options'][field['selected']].hasOwnProperty('image')) {
+        if (field['options'][field['selected']]['image'] === '') {
+          continue;
+        }
+        image = `./assets/images/items/${this.selectedItem.name}/${field['options'][field['selected']]['image']}.png`;
+      } else {
+        image = `./assets/images/items/${this.selectedItem.name}/${field.name}-${field['options'][field['selected']]['value']}.png`;
+      }
+
+      this.selectedItemImages.push(image);
     }
   }
 

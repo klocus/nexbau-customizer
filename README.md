@@ -64,11 +64,13 @@ Each field is a separate layer, so it is important that the image files are tran
         },
         {
           value: 'blue',
-          label: 'Blue'
+          label: 'Blue',
+          image: 'lorem' // OPTIONAL: custom name of layer-image
         },
         {
           value: 'green',
-          label: 'Green'
+          label: 'Green',
+          icon: 'lorem' // OPTIONAL: custom name of icon
         }
       ]
     }
