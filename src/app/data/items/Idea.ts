@@ -954,7 +954,8 @@ export const Idea: Item = {
         items: [
           {
             field: 'handle',
-            value: 'long'
+            value: 'shaped',
+            compare: '!='
           }
         ]
       },
