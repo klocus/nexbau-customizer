@@ -65,6 +65,10 @@ export const Roots: Item = {
       selected: 0,
       options: [
         {
+          value: 'ral-3004',
+          label: 'RAL-3004'
+        },
+        {
           value: 'ral-6033',
           label: 'RAL-6033'
         },
@@ -87,6 +91,10 @@ export const Roots: Item = {
         {
           value: 'ral-7016',
           label: 'RAL-7016'
+        },
+        {
+          value: 'ral-9005',
+          label: 'RAL-9005'
         },
         {
           value: 'structural-varnish-rust',
