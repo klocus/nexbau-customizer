@@ -121,4 +121,4 @@ condition: {
 
 ### Cloning and forking of this repository is prohibited. This is not a free license project!
 
-Copyright by NEXBAU Sp. z o.o. All rights reserved.
+Copyright by Paweł Klockiewicz for NEXBAU Sp. z o.o. All rights reserved.
